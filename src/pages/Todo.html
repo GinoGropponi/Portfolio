@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <title>Todo List</title>
+</head>
+
+<body>
+    <div class="maincontainer">
+        <section class="todoInsert">
+            <h1>Add New</h1>
+            <form>
+                <input type="text" class="todoInput">
+                <button class="todoButton" type="submit"><i class="fas fa-plus"></i></button>
+            </form>
+        </section>
+        <section class="todoContainer">
+            <ul class="todoList">
+                <!-- <div class="todo">
+                    <li>asdasdasdasd</li>
+                    <button class="check"></button>
+                    <button class="delete"></button>
+                </div> -->
+            </ul>
+        </section>
+
+        <div class="select">
+            <select name="todos" class="filterTodo">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="uncompleted">Uncompleted</option>
+            </select>
+
+        </div>
+
+    </div>
+
+
+    <script src="todo.js"></script>
+</body>
+
+</html>

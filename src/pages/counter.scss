@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+
+html {
+    --bg: #ffffff;
+    --fc: #202020;
+    
+    --primario: #f62b48;
+    --secundario: #71bf9f;
+    --terciario: #6575b6;
+
+    --degrade: -webkit-linear-gradient(0deg, #f8b383, #ed1e79);
+  }
+  html[data-theme="dark"] {
+    --bg: #100e24;
+    --fc: #eeeeee;
+  
+    --primario: #f62b48;
+    --secundario: #71bf9f;
+    --terciario: #6575b6;
+  
+    --degrade: -webkit-linear-gradient(0deg, #f8b383, #ed1e79);
+  }
+    
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 50vh;
+    background-color: var(--bg);
+   
+    background-size: 100%;
+
+    nav{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+
+      background-color: var(--bg);
+        -webkit-box-shadow: 0px 10px 20px -12px rgb(0, 0, 0);
+        -moz-box-shadow: 0px 10px 20px -12px rgb(0, 0, 0);
+        box-shadow: 0px 10px 20px -12px rgb(0, 0, 0);
+
+
+        padding: 2rem;
+        margin-bottom: 2rem;
+
+        a{
+            color: var(--fc);
+            font-size: 3rem;
+            text-decoration: none;
+        }
+
+    }
+
+
+
+
+    .contador {
+        // background-image:url(../assets/blobWall.svg);
+        // background-size: cover;
+        .titulo{
+            h1{
+                font-family: jost;
+                font-weight: 900;
+                text-align: center;
+                color: var(--fc);
+                font-size: 100pt;
+                margin-bottom: 5rem;
+            }
+        }
+        .wallpaper{
+            margin: 2rem;
+            padding: 2rem;
+            background-color: var(--primario);
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 30rem;
+            margin: auto;
+            height: 800px;
+            width: 800px;
+            position: relative;
+            animation: animate 60s linear infinite;
+            
+          
+
+        @keyframes animate {
+            
+            0%{
+                border-radius: 25rem 20rem 23rem 28rem / 29rem 25rem 30rem 22rem;
+                transform: rotate(0deg);
+
+            }
+            25%{
+                border-radius: 20rem 30rem 26rem 22rem / 30rem 26rem 21rem 29rem;
+            }
+            50%{
+                border-radius: 30rem 30rem 30rem 30rem / 30rem 30rem 30rem 30rem;
+                transform: rotate(360deg);
+            }
+            75%{
+                border-radius: 24rem 30rem 26rem 22rem / 30rem 26rem 21rem 29rem;
+            }
+            100%{
+                border-radius: 25rem 20rem 23rem 28rem / 29rem 25rem 30rem 22rem;
+                transform: rotate(0deg);
+            }
+            
+           
+        }
+
+        }
+
+    .container{
+        transform: translateY(-140%);
+ 
+        z-index: 10;
+        
+   
+       
+        .button-container {
+            z-index: 10;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            button {
+                border-radius: 50%;
+                height: 5rem;
+                width: 5rem;
+                margin: 0.5rem;
+
+                font-size: 15pt;
+            }
+        }
+
+        span {
+            font-family: jost;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &#display {
+                color: var(--bg);
+                font-size: 200pt;
+                font-weight: 900;
+             
+            }
+        }
+       
+        a.btn-counter {
+            height: 1rem;
+            width: 1rem;
+            border-radius: 50%;
+
+            margin: 1rem;
+            padding: 2rem;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background: var(--bg);
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+
+            &:active {
+                outline: none;
+                opacity: 0.8;
+            }
+            &:focus {
+                outline: 0;
+            }
+        }
+        
+        
+    }
+
+    
+    }
+}
